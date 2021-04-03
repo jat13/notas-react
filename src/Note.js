@@ -1,3 +1,5 @@
+import "./Note.css"
+
 export const Note = ({ content, date }) => {
   return(
 	<li>

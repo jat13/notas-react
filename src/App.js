@@ -6,6 +6,7 @@
       Tiene que ser un valor que identifique SIEMPRE al mismo objeto, por ejemplo su ID
       Por ejemplo, su posición en el array no valdría, porque al eliminar un objeto del array las posiciones cambian.
 */
+import "./App.css"
 import {useState} from "react"
 import {Note} from "./Note.js"
 
@@ -43,7 +44,7 @@ export default function App(props){
   return(
     <div>
       <h1>Notas</h1>
-      <button onClick={handleShowAll} >{showAll ? "Mostrar importantes" : "Mostrar todas"}</button>
+      <button class="showAll" onClick={handleShowAll} >{showAll ? "Mostrar importantes" : "Mostrar todas"}</button>
       <ol>
         {notes
           .filter((note) => {
