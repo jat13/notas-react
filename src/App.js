@@ -44,7 +44,7 @@ export default function App(props){
   return(
     <div>
       <h1>Notas</h1>
-      <button class="showAll" onClick={handleShowAll} >{showAll ? "Mostrar importantes" : "Mostrar todas"}</button>
+      <button className="showAll" onClick={handleShowAll} >{showAll ? "Mostrar importantes" : "Mostrar todas"}</button>
       <ol>
         {notes
           .filter((note) => {
